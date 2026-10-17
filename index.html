@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>قسم الإنتاج النباتي | فريق نباتي العز - ممثل القسم محمد البشابشه</title>
+  <meta name="description" content="البوابة الرسمية لقسم الإنتاج النباتي - كلية الزراعة. بإشراف فريق نباتي العز وممثل القسم محمد البشابشه. تحميل سلايدات ومحاضرات الدكاترة بصيغة PDF.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+  
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================
+       Header & Navigation Bar
+       ========================================================== -->
+  <header class="main-header" id="mainHeader">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#home" class="brand-link">
+          <img src="assets/logo.jpg" alt="شعار قسم الإنتاج النباتي" class="brand-logo">
+          <div class="brand-info">
+            <h1>قسم الإنتاج النباتي</h1>
+            <span>كلية الزراعة</span>
+          </div>
+        </a>
+
+        <nav class="main-nav">
+          <a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> الرئيسية</a>
+          <a href="#course-slides" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> دكاترة ومواد التخصص</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="theme-toggle-btn" id="themeToggleBtn" title="تبديل الوضع الليلي / النهاري">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <a href="#course-slides" class="btn-primary">
+            <i class="fa-solid fa-book-open"></i> مواد التخصص
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================
+       الواجهة الرئيسية النظيفة (فريق الإنتاج النباتي & ممثل القسم محمد البشابشه)
+       ========================================================== -->
+  <section class="minimal-home-section" id="home">
+    <div class="minimal-home-overlay"></div>
+    <div class="container">
+      <div class="minimal-home-card">
+        <img src="assets/logo.jpg" alt="شعار قسم الإنتاج النباتي" class="department-crest-img">
+        
+        <h2>قسم تكنولوجيا وعلوم النبات</h2>
+        <div class="sub-faculty">جامعة العلوم والتكنولوجيا الأردنية - كلية الزراعة</div>
+
+        <!-- البانر المخصص بناءً على طلبك -->
+        <div class="honor-attribution-box">
+          <div class="honor-line gold">
+            <i class="fa-solid fa-crown"></i>
+            <span>بإشراف: <strong>فريق نباتي العز (فريق الإنتاج النباتي)</strong></span>
+          </div>
+          <div class="honor-line emerald">
+            <i class="fa-solid fa-user-graduate"></i>
+            <span>رئيس قسم الإنتاج النباتي: <strong>محمد السالم</strong></span>
+          </div>
+          <div class="honor-line white">
+            <i class="fa-solid fa-user-tie"></i>
+            <span>ممثل قسم الإنتاج النباتي: <strong>محمد البشابشه</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       قسم دكاترة ومواد التخصص (مواد تخصص بمكان واحد)
+       د. محمد غرايبه & د. ليث مروان الروسان & د. فراس أبو السمن
+       ========================================================== -->
+  <section class="course-section" id="course-slides">
+    <div class="container">
+      
+      <div class="section-title-wrap">
+        <span class="section-badge"><i class="fa-solid fa-graduation-cap"></i> مواد تخصص - قسم الإنتاج النباتي</span>
+        <h2>دكاترة ومساقات التخصص</h2>
+        <p>تصفح وتحميل سلايدات ومحاضرات دكاترة مواد التخصص المعتمدة بصيغة PDF</p>
+      </div>
+
+      <!-- دكاترة المواد بمكان واحد (مواد تخصص) -->
+      <div class="doctors-unified-selector" id="doctorsSelector">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+
+      <!-- بطاقة تعريف الدكتور والمساق المختار -->
+      <div class="doctor-header-card" id="activeDoctorCard">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+
+      <!-- شبكة سلايدات المادة بصيغة PDF -->
+      <div class="slides-grid" id="slidesGrid">
+        <!-- Rendered dynamically by app.js from data.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       Modal for Slide Content & Reading
+       ========================================================== -->
+  <div class="modal-overlay" id="slideModal">
+    <div class="modal-box">
+      <div class="modal-header-row">
+        <h3 id="modalSlideTitle">تفاصيل المحاضرة</h3>
+        <button class="modal-close-btn" id="modalCloseBtn">&times;</button>
+      </div>
+      <div id="modalSlideBody">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================
+       Clean Footer
+       ========================================================== -->
+  <footer class="clean-footer">
+    <div class="container">
+      <p>
+        قسم الإنتاج النباتي - كلية الزراعة &copy; 
+        رئيس القسم: <strong>محمد السالم</strong> | ممثل القسم: <strong>محمد البشابشه</strong> | بإشراف <strong>فريق نباتي العز</strong>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Hidden Iframe for Universal Zero-Popup Printing / Saving as PDF -->
+  <iframe id="pdfPrintIframe" style="position:fixed; right:-9999px; bottom:-9999px; width:1px; height:1px; border:0; visibility:hidden;"></iframe>
+
+  <!-- Scripts -->
+  <script src="js/html2pdf.bundle.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
